@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a href="http://www.imooc.com/code/1633">dd</a>
+   <p><span id="sec"></span>return <a href="javascript:goBack();">return</a></p>
+ 
+  <script type="text/javascript">  
+ 
+
+   var totalsec = 5;
+   var timeid = setInterval(seclast, 1000);
+ function seclast(){
+    document.getElementById("sec").innerHTML= totalsec;
+    totalsec -= 1;
+    if(totalsec<0){
+        clearInterval(timeid);
+        window.location.href =  "http://www.imooc.com/";
+    }
+ } 
+  function goBack(){ 
+	window.history.go(-1);
+  }  
+ </script>
+</body>
+</html>
